@@ -7,7 +7,7 @@ endif
 TOPDIR ?= $(CURDIR)
 include $(DEVKITARM)/3ds_rules
 
-TARGET		:= 3dsalarmingclock
+TARGET		:= 3DS_AlarmingClock
 BUILD		:= build
 SOURCES		:= source
 DATA		:= data
@@ -15,7 +15,7 @@ INCLUDES	:= include
 GRAPHICS	:= gfx
 GFXBUILD	:= $(BUILD)
 APP_TITLE	:= 3DS™  Alarming Clock
-APP_DESCRIPTION	:= Cool alarm for the 3DS!
+APP_DESCRIPTION	:= Alarm clock for the 3DS!
 APP_AUTHOR	:= Jocc3D
 
 ARCH := -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft
@@ -104,7 +104,7 @@ endif
 
 cia: all
 	@bannertool makebanner -i $(TOPDIR)/menu/banner.png -a $(TOPDIR)/menu/jingle.wav -o $(TOPDIR)/banner.bnr
-	@bannertool makesmdh -s "3DS Alarming Clock" -l "Alarm clock for the 3DS!" -p "Joc3D" -i $(TOPDIR)/menu/icon.png -o $(TOPDIR)/icon.icn
+	@bannertool makesmdh -s "3DS Alarming Clock" -l "3DS Alarming Clock" -p "Jocc3D" -i $(TOPDIR)/menu/icon.png -o $(TOPDIR)/icon.icn
 	@makerom -f cia -target t -exefslogo -o $(TOPDIR)/$(TARGET).cia -elf $(OUTPUT).elf -icon $(TOPDIR)/icon.icn -banner $(TOPDIR)/banner.bnr -desc app:4 -rsf $(TOPDIR)/menu/app.rsf
 	@echo "built ... $(TARGET).cia"
 

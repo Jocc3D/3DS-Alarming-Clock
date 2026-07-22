@@ -10,7 +10,7 @@ void alarm_init(AppState *state) {
     state->alarm_active     = false;
     state->active_alarm_idx = -1;
     state->ampm_mode        = false;
-    state->language         = 0;
+    state->language         = 1; // LANG_EN
     state->display_mode     = 0;
     for (int i = 0; i < MAX_ALARMS; i++) {
         state->alarms[i].hour      = DEFAULT_HOURS[i];

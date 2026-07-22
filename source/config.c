@@ -3,7 +3,7 @@
 #include <sys/stat.h>
 #include <string.h>
 
-#define CONFIG_PATH "sdmc:/3ds/3dsalarmingclock/config.bin"
+#define CONFIG_PATH "sdmc:/3ds/3DSAlarmingClock/config.bin"
 #define CONFIG_MAGIC 0xAC111
 
 typedef struct {
@@ -21,7 +21,7 @@ void config_load(AppState *state) {
 }
 
 void config_save(const AppState *state) {
-    mkdir("sdmc:/3ds/3dsalarmingclock", 0777);
+    mkdir("sdmc:/3ds/3DSAlarmingClock", 0777);
     FILE *f = fopen(CONFIG_PATH, "wb");
     if (!f) return;
     ConfigFile cf;

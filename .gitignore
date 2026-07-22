@@ -58,6 +58,7 @@ libncsnd/
 banner/
 romfs/
 build/
+ignore/
 *.cia
 *.3dsx
 *.smdh

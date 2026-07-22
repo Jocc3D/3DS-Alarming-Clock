@@ -11,7 +11,6 @@ Why would you need an alarm on your 3DS?" you might ask. "Isn't it just better t
 Over time I realized my 3DS had significantly better battery life and, more importantly, didn't have a busted charging port and a failing battery. That's when I told myself "yeah maybe this could work." After quite a bit of research on this unknown world of Homebrew programming I decided to create 3DS Alarming Clock and share it with everyone! Maybe it's not perfect, but it definitively works!
 
 ## Features
-* Minimalistic design
 * Alarm rings even in sleep mode (console closed)
 * Sleeping-proof!
   * While the alarm is ringing, you can't go to the HOME menu or lower the volume
@@ -32,7 +31,7 @@ Over time I realized my 3DS had significantly better battery life and, more impo
 * Alarms setted to current hour will instantly ring
 
 ## Credits
-* **Joc3D** — app development, banner, icons, SFX and other assets
+* **Jocc3D** — app development, banner, icons, SFX and other assets
 * **PabloMK7** — [libncsnd](https://github.com/PabloMK7/libncsnd), which makes audio playback possible with the console closed
 
 ## Building
@@ -42,3 +41,6 @@ Requires [devkitARM](https://devkitpro.org/) with the following libraries from t
 * `3ds-libctru`
 * `3ds-mcuhwc`
 * [libncsnd](https://github.com/PabloMK7/libncsnd) by PabloMK7
+
+## Disclaimer
+This app's code was developed with AI assistance. However, no visual or audio assets (e.g. banner, icon, sounds) were AI-generated.
